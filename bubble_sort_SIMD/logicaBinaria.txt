@@ -1,0 +1,26 @@
+Immaginiamo di avere
+[0,  6, 2, 10] = vec
+[ 1, 5, 6, 9] = reg_min
+
+
+Se faccio il compare less (vec < reg_min)than ottengo
+[T,F,T,F]
+
+
+Data una maschera tipo
+[T,F,T,F]
+
+Faccio l'and della maschera con gli el del vettore
+[T,F,T,F] && [el1,el2,el3,el4]
+in OR con
+![T,F,T,F] && [min1,min2,min3,min4]
+
+In questo modo il risultato un registro con rispettivi minimi
+Nel caso specifico in esempio:
+
+[T,F,T,F] && [0,  6, 2, 10] = [0,0,2,0]
+![T,F,T,F] && [ 1, 5, 6, 9] = [0,5,0,9]
+
+[0,0,2,0] OR [0,5,0,9] = [0,5,2,9]
+
+Esattamente quello che volevamo

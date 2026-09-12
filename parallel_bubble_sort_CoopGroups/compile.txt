@@ -1,0 +1,6 @@
+nvcc -arch=sm_75 -o my_program main.cu kernel_impl.cu host_impl.c
+
+#"-arch=sm_75" serve per google colab
+
+Nsight
+ncu --set full --section-folder /usr/lib/nsight-compute/sections -o test_report ./my_program
