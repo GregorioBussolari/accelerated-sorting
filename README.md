@@ -10,11 +10,11 @@ Project developed for the **Accelerated Computing Systems M** course.
 
 - [Introduction](#introduction)
 - [Part I — CUDA Parallelization](#part-i--cuda-parallelization)
-  - [V1 — Naïve Implementation (two kernels)](https://github.com/GregorioBussolari/accelerated-sorting/parallel_bubble_sort_Base)
-  - [V2 — Optimization with Cooperative Groups](https://github.com/GregorioBussolari/accelerated-sorting/parallel_bubble_sort_CG_Shared)
-  - [V3 — Optimization with Shared Memory](https://github.com/GregorioBussolari/accelerated-sorting/parallel_bubble_sort_CoopGroups)
+  - [V1 — Naïve Implementation (two kernels)](./parallel_bubble_sort_Base)
+  - [V2 — Optimization with Cooperative Groups](./parallel_bubble_sort_CG_Shared)
+  - [V3 — Optimization with Shared Memory](./parallel_bubble_sort_CoopGroups)
 - [Part II — SIMD Implementation](#part-ii--simd-implementation)
-  - [SIMD Algorithm Strategy](https://github.com/GregorioBussolari/accelerated-sorting/bubble_sort_SIMD)
+  - [SIMD Algorithm Strategy](./bubble_sort_SIMD)
 - [Docs](./docs/)
 
 
